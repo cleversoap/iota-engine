@@ -1,0 +1,8 @@
+*.swp
+*.swo
+.DS_Store
+*.a
+*.o
+*.dylib
+*.framework
+build/

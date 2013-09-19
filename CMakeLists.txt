@@ -11,9 +11,15 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 # GLFW
-find_package(GLFW3)
+find_package(GLFW3 REQUIRED)
 include_directories(${GLFW3_DIR})
 link_directories(${GLFW3_LIB_DIR})
+
+# GLEW
+find_package(GLEW REQUIRED)
+include_directories(${GLEW_DIR})
+link_directories(${GLEW_LIB_DIR})
+
 
 # Move into the iota-engine library directory
 add_subdirectory("iota-engine")

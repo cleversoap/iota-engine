@@ -1,4 +1,4 @@
-# Headers
+# Header Directory
 find_path(GLFW3_DIR glfw3.h DOC "Path to GLFW3 include directory."
     HINTS
     $ENV{GLFW_ROOT}
@@ -10,11 +10,12 @@ find_path(GLFW3_DIR glfw3.h DOC "Path to GLFW3 include directory."
     /usr/include/GL
     /usr/local/include/GL
     ${GLFW_ROOT_DIR}/include/
+    ${GLFW_ROOT_DIR}/include/GLFW
     )
 
 message(STATUS "Found GLFW3 Headers: ${GLFW3_DIR}")
 
-# Library Path
+# Library Directory
 find_path(GLFW3_LIB_DIR libglfw3.dylib libglfw3.a libglfw3.so glfw3.lib DOC "Path to GLFW3 libraries."
     HINTS
     PATH_SUFFIX lib

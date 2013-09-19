@@ -10,7 +10,7 @@
 #include <glew.h>
 
 // glfw
-#include <glfw.h>
+#include <glfw3.h>
 
 // glm
 #include <glm.hpp>

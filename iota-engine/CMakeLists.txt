@@ -9,3 +9,4 @@ add_library(iota ${IOTA_SOURCES})
 
 # Link the library
 target_link_libraries(iota ${GLFW_LIB})
+target_link_libraries(iota ${GLEW_LIB})

@@ -7,9 +7,13 @@ namespace iota
 {
     class Context
     {
+        protected:
+            Window* _window;
+
         public:
-            Context();
+            Context(Window* window);
             virtual ~Context();
+            virtual void update();
     };
 }
 

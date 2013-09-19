@@ -13,8 +13,9 @@ namespace iota
         public:
             Window();
             virtual ~Window();
-            void open();
-            void close();
+            virtual void open();
+            virtual void close();
+            virtual GLFWwindow* getWindow();
     };
 }
 

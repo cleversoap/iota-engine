@@ -5,11 +5,12 @@
 #include <iostream>
 #include <thread>
 #include <atomic>
+#include <chrono>
 
 // glew must be included before anything GL
 #include <glew.h>
 
-// glfw
+// glfw3
 #include <glfw3.h>
 
 // glm
@@ -18,7 +19,12 @@
 // Class pre-declarations
 namespace iota
 {
+    class Context;
     class Window;
 }
+
+// Headers
+#include "Context.h"
+#include "Window.h"
 
 #endif

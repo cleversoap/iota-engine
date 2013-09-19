@@ -8,3 +8,4 @@ aux_source_directory("src" IOTA_SOURCES)
 add_library(iota ${IOTA_SOURCES})
 
 # Link the library
+target_link_libraries(iota ${GLFW_LIB})

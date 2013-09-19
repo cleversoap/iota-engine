@@ -20,6 +20,10 @@ find_package(GLEW REQUIRED)
 include_directories(${GLEW_DIR})
 link_directories(${GLEW_LIB_DIR})
 
+# GLM
+find_package(GLM REQUIRED)
+include_directories(${GLM_DIR})
+
 
 # Move into the iota-engine library directory
 add_subdirectory("iota-engine")

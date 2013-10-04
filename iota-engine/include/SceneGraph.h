@@ -13,12 +13,16 @@ namespace iota
             // nodes added without a specific name.
             i_uint      _count;
 
-            // Map of node names to nodes.
+            // Global map of node names to nodes.
             i_node_map  _nodeMap;
+
+            // Root node of the entire scene
+            Node*       _root;
 
         public:
             SceneGraph();
             virtual ~SceneGraph();
+            virtual Node* getNode(const std::string name);
     };
 }
 

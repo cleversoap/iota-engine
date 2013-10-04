@@ -7,6 +7,8 @@
 #include <atomic>
 #include <chrono>
 #include <map>
+#include <vector>
+#include <string>
 
 // glew must be included before anything GL
 #include <glew.h>

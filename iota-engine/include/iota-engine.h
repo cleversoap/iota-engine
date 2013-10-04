@@ -16,15 +16,22 @@
 // glm
 #include <glm.hpp>
 
+// Types
+#include "types.h"
+
 // Class pre-declarations
 namespace iota
 {
     class Context;
     class Window;
+    class SceneGraph;
+    class Node;
 }
 
 // Headers
 #include "Context.h"
 #include "Window.h"
+#include "SceneGraph.h"
+#include "Node.h"
 
 #endif

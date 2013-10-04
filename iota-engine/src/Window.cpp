@@ -31,9 +31,11 @@ void iota::Window::open()
         exit(EXIT_FAILURE);
     }
 
+    glfwMakeContextCurrent(_window);
+
     // Setup Glew
     glewExperimental = true;
-    if (!glewInit())
+    if (glewInit() != GLEW_OK)
     {
         std::cerr << "Failed to initialise GLEW" << std::endl;
         this->close();
@@ -41,7 +43,6 @@ void iota::Window::open()
         exit(EXIT_FAILURE);
     }
 
-    glfwMakeContextCurrent(_window);
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 
     /**

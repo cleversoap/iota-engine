@@ -6,6 +6,7 @@
 #include <thread>
 #include <atomic>
 #include <chrono>
+#include <map>
 
 // glew must be included before anything GL
 #include <glew.h>
@@ -16,9 +17,6 @@
 // glm
 #include <glm.hpp>
 
-// Types
-#include "types.h"
-
 // Class pre-declarations
 namespace iota
 {
@@ -27,6 +25,9 @@ namespace iota
     class SceneGraph;
     class Node;
 }
+
+// Types
+#include "types.h"
 
 // Headers
 #include "Context.h"

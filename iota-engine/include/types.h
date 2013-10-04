@@ -6,8 +6,12 @@
 
 namespace iota
 {
-    typedef uint  GLuint;
-    typedef float GLfloat;
+    // Internal GL Types
+    typedef GLuint i_uint; 
+    typedef GLfloat i_float;
+
+    // iota convenience types
+    typedef std::map<std::string,Node*> i_node_map;
 }
 
 #endif

@@ -8,7 +8,13 @@ namespace iota
     class SceneGraph
     {
         protected:
-            uint _count;
+            // Running count of scene nodes that have been added.
+            // Used primarily for assigning a numerical suffix to
+            // nodes added without a specific name.
+            i_uint      _count;
+
+            // Map of node names to nodes.
+            i_node_map  _nodeMap;
 
         public:
             SceneGraph();

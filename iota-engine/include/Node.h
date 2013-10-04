@@ -8,6 +8,7 @@ namespace iota
         public:
             Node();
             virtual ~Node();
+            virtual bool isVisible();
     };
 }
 

@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 project(IOTA)
 
 # Force C++ 11
-add_definitions("-std=c++11 -stdlib=libc++")
+add_definitions("-std=c++11")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
 
 # Set the Module Path

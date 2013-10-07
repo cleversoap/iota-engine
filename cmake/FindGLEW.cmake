@@ -14,20 +14,21 @@ find_path(GLEW_DIR glew.h DOC "Path to GLEW include directory"
 message(STATUS "Found GLEW Headers: ${GLEW_DIR}")
 
 # Library Directory
-find_path(GLEW_LIB_DIR libglew.dylib libglew.a libglew.so glew.lib DOC "Path to GLEW libraries."
+find_path(GLEW_LIB_DIR libglew.dylib libGLEW.a libglew.a libGLEW.so libglew.so glew.lib DOC "Path to GLEW libraries."
     HINTS
     PATH_SUFFIX lib
     PATHS
     ${GLFW_ROOT_DIR}/lib
     /usr/lib
     /usr/local/lib
+    /usr/local/lib64
 )
 
 message(STATUS "Found GLEW Libraries: ${GLEW_LIB_DIR}")
 
 # Library
 find_library(GLEW_LIB DOC "GLEW Library"
-    NAMES glew
+    NAMES GLEW glew
     HINTS
     ${GLEW_LIB_DIR}
 )

@@ -26,3 +26,8 @@ void iota::Context::draw()
     glfwSwapBuffers(_window->getWindow());
     glfwPollEvents();
 }
+
+iota::ISceneManager* iota::Context::getSceneManager()
+{
+    return 0;
+}

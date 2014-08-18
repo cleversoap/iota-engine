@@ -15,6 +15,7 @@ namespace iota
             virtual ~Context();
             virtual bool init();
             virtual void draw();
+            virtual ISceneManager* getSceneManager();
     };
 }
 

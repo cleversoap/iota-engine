@@ -25,6 +25,7 @@ namespace iota
     class Window;
     class SceneGraph;
     class Node;
+    class ISceneManager;
 }
 
 // Types
@@ -35,5 +36,6 @@ namespace iota
 #include "Window.h"
 #include "SceneGraph.h"
 #include "Node.h"
+#include "ISceneManager.h"
 
 #endif

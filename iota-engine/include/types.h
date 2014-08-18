@@ -20,6 +20,7 @@ namespace iota
         uint major;
         uint minor;
         bool core;
+        bool forward;
     } GLVersion;
 }
 

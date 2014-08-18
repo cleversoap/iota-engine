@@ -13,7 +13,8 @@ namespace iota
         public:
             Context(Window* window);
             virtual ~Context();
-            virtual void update();
+            virtual bool init();
+            virtual void draw();
     };
 }
 

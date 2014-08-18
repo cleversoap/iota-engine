@@ -9,13 +9,17 @@ namespace iota
     {
         protected:
             GLFWwindow* _window;
+            Context* _context;
 
         public:
             Window();
             virtual ~Window();
             virtual void open();
+            virtual bool update();
             virtual void close();
             virtual GLFWwindow* getWindow();
+            virtual Context* getContext();
+            virtual void setContext(Context* context);
     };
 }
 

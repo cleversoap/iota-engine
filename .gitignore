@@ -6,3 +6,4 @@
 *.dylib
 *.framework
 build/
+.syntastic_cpp_config

@@ -24,6 +24,14 @@ link_directories(${GLEW_LIB_DIR})
 find_package(GLM REQUIRED)
 include_directories(${GLM_DIR})
 
+# OSX Frameworks
+if(APPLE)
+    find_library(COCOA_LIBRARY Cocoa REQUIRED)
+    find_library(OPENGL_LIBRARY OpenGL REQUIRED)
+    find_library(IOKIT_LIBRARY IOKit REQUIRED)
+    find_library(COREVIDEO_LIBRARY CoreVideo REQUIRED)
+    set(APPLE_FRAMEWORKS ${COCOA_LIBRARY} ${OPENGL_LIBRARY} ${IOKIT_LIBRARY} ${COREVIDEO_LIBRARY})
+endif(APPLE)
 
 # Move into the iota-engine library directory
 add_subdirectory("iota-engine")

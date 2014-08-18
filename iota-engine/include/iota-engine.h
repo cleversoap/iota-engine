@@ -4,7 +4,6 @@
 // std includes
 #include <iostream>
 #include <thread>
-#include <atomic>
 #include <chrono>
 #include <map>
 #include <vector>

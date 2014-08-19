@@ -22,6 +22,19 @@ namespace iota
         bool core;
         bool forward;
     } GLVersion;
+
+    // Configurations
+    typedef struct {
+        i_uint      width;
+        i_uint      height;
+        bool        fullscreen;
+        bool        resizable;
+        std::string title;
+    } WindowConfig;
+
+    typedef struct {
+        int samples;
+    } ContextConfig;
 }
 
 #endif

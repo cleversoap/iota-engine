@@ -22,7 +22,7 @@ iota::Window::~Window()
 TODO: Look at masking for the certain window hint options
 eg. glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
 */
-void iota::Window::open()
+void iota::Window::open(const iota::WindowConfig &cfg)
 {
     // Tell the context to initialise
     if (!_context->init()) {
@@ -30,8 +30,11 @@ void iota::Window::open()
         exit(EXIT_FAILURE);
     }
 
+    // Handle the window hints from the config
+    glfwWindowHint(GLFW_RESIZABLE, cfg.resizable);
+
     // Create a window
-    _window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
+    _window = glfwCreateWindow(cfg.width, cfg.height, cfg.title.c_str(), NULL, NULL);
     if (!_window) {
         std::cerr << "Failed to create GLFW Window" << std::endl;
         glfwTerminate();

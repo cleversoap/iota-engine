@@ -14,7 +14,7 @@ namespace iota
         public:
             Window();
             virtual ~Window();
-            virtual void open();
+            virtual void open(const WindowConfig &cfg);
             virtual bool update();
             virtual void close();
             virtual GLFWwindow* getWindow();

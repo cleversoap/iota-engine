@@ -30,5 +30,5 @@ void iota::Context::draw()
 
 iota::ISceneManager* iota::Context::getSceneManager()
 {
-    return 0;
+    return _smgr;
 }

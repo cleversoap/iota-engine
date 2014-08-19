@@ -1,7 +1,8 @@
 #include "Context.h"
 
 iota::Context::Context(Window* window) :
-    _window(window)
+    _window(window),
+    _smgr(new SceneManager())
 {
     _window->setContext(this);
 }

@@ -1,15 +1,21 @@
 #ifndef __IOTA_ISCENEMANAGER_H__
 #define __IOTA_ISCENEMANAGER_H__
 
-class ISceneManager
-{
-    public:
-        virtual void addChild();
-        virtual void removeChild();
-        virtual void get();
+#include "iota-engine.h"
 
-        // TODO: Iterator that goes over the list of nodes in the order they
-        // were added? Selector engine as well?
-};
+namespace iota
+{
+    class ISceneManager
+    {
+        public:
+            virtual bool addChild() = 0;
+            virtual bool removeChild() = 0;
+            virtual void get() = 0;
+            virtual void next() = 0;
+
+            // TODO: Iterator that goes over the list of nodes in the order they
+            // were added? Selector engine as well?
+    };
+}
 
 #endif

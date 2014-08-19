@@ -9,6 +9,7 @@ namespace iota
     {
         protected:
             Window* _window;
+            ISceneManager* _smgr;
 
         public:
             Context(Window* window);

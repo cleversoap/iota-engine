@@ -16,13 +16,15 @@ find_path(GLFW3_DIR glfw3.h DOC "Path to GLFW3 include directory."
 message(STATUS "Found GLFW3 Headers: ${GLFW3_DIR}")
 
 # Library Directory
-find_path(GLFW3_LIB_DIR libglfw3.dylib libglfw3.a libglfw3.so glfw3.lib DOC "Path to GLFW3 libraries."
+find_path(GLFW3_LIB_DIR libglfw3.dylib libglfw3.a libglfw3.so libglfw.so.3 libglfw.so glfw3.lib DOC "Path to GLFW3 libraries."
     HINTS
     PATH_SUFFIX lib
     PATHS
     ${GLFW_ROOT_DIR}/lib
     /usr/lib
     /usr/local/lib
+    /usr/lib64
+    /usr/local/lib64
 )
 
 message(STATUS "Found GLFW3 Libraries: ${GLFW3_LIB_DIR}")

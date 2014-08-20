@@ -20,6 +20,7 @@ find_path(GLEW_LIB_DIR libglew.dylib libGLEW.a libglew.a libGLEW.so libglew.so g
     PATHS
     ${GLFW_ROOT_DIR}/lib
     /usr/lib
+    /usr/lib64
     /usr/local/lib
     /usr/local/lib64
 )

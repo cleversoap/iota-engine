@@ -10,9 +10,10 @@ namespace iota
         protected:
             Window* _window;
             ISceneManager* _smgr;
+            ContextConfig _cfg;
 
         public:
-            Context(Window* window);
+            Context(Window* window, const ContextConfig &cfg);
             virtual ~Context();
             virtual bool init();
             virtual void draw();

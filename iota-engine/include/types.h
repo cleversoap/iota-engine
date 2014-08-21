@@ -7,9 +7,9 @@
 namespace iota
 {
     // Internal GL Types
-    typedef GLuint i_uint; 
+    typedef GLuint  i_uint; 
     typedef GLfloat i_float;
-    typedef GLuint i_texture_id;
+    typedef GLuint  i_texture_id;
 
     // iota convenience types
     typedef std::map<std::string,Node*> i_node_map;
@@ -33,7 +33,9 @@ namespace iota
     } WindowConfig;
 
     typedef struct {
-        int samples;
+        int   samples;
+        bool  ssao;
+        int   filtering;
     } ContextConfig;
 }
 

@@ -12,15 +12,15 @@ namespace iota
     typedef GLuint  i_texture_id;
 
     // iota convenience types
-    typedef std::map<std::string,Node*> i_node_map;
-    typedef std::vector<Node*> i_node_list; // TODO: tbb::concurrent_vector
+    typedef std::map<std::string,ISceneNode*> i_node_map;
+    typedef std::vector<ISceneNode*> i_node_list;
 
     // GL Versions
     typedef struct {
-        uint major;
-        uint minor;
-        bool core;
-        bool forward;
+        const uint major;
+        const uint minor;
+        const bool core;
+        const bool forward;
     } GLVersion;
 
     // Configurations

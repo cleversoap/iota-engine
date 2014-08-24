@@ -24,9 +24,11 @@ namespace iota
     class Context;
     class Window;
     class SceneGraph;
-    class Node;
     class ISceneManager;
     class SceneManager;
+    class ISceneNode;
+    class SceneNode;
+    class IComponent;
 }
 
 // Types
@@ -36,8 +38,10 @@ namespace iota
 #include "Context.h"
 #include "Window.h"
 #include "SceneGraph.h"
-#include "Node.h"
 #include "ISceneManager.h"
 #include "SceneManager.h"
+#include "ISceneNode.h"
+#include "SceneNode.h"
+#include "IComponent.h"
 
 #endif

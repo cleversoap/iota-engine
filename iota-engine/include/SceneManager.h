@@ -13,7 +13,9 @@ namespace iota
             virtual bool addChild();
             virtual bool removeChild();
             virtual void get();
-            virtual void next();
+            virtual void begin();
+            virtual ISceneNode* next();
+            virtual void end();
     };
 }
 

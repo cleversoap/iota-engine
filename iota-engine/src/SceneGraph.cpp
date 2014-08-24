@@ -9,7 +9,7 @@ iota::SceneGraph::~SceneGraph()
 {
 }
 
-iota::Node* iota::SceneGraph::getNode(const std::string name)
+iota::ISceneNode* iota::SceneGraph::getNode(const std::string name)
 {
     return _nodeMap.find(name)->second;
 }

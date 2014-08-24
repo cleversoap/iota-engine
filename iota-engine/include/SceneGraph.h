@@ -17,12 +17,12 @@ namespace iota
             i_node_map  _nodeMap;
 
             // Root node of the entire scene
-            Node*       _root;
+            ISceneNode*       _root;
 
         public:
             SceneGraph();
             virtual ~SceneGraph();
-            virtual Node* getNode(const std::string name);
+            virtual ISceneNode* getNode(const std::string name);
     };
 }
 

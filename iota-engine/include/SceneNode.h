@@ -5,16 +5,16 @@
 
 namespace iota
 {
-    class Node
+    class SceneNode
     {
         protected:
             i_node_list _children;
             std::string _name;
-            Node* _parent;
+            SceneNode* _parent;
 
         public:
-            Node();
-            virtual ~Node();
+            SceneNode();
+            virtual ~SceneNode();
             virtual bool isVisible();
     };
 }

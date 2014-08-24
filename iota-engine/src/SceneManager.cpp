@@ -23,7 +23,18 @@ void iota::SceneManager::get()
 {
 }
 
-void iota::SceneManager::next()
+void iota::SceneManager::begin()
 {
+    // Lock the scene graph and move the iterator to the start
+}
+
+iota::ISceneNode* iota::SceneManager::next()
+{
+    return NULL;
+}
+
+void iota::SceneManager::end()
+{
+    // Unlock the scene graph
 }
 

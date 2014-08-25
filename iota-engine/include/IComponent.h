@@ -8,6 +8,7 @@ namespace iota
     class IComponent
     {
         public:
+            virtual ~IComponent() {};
             virtual void setPosition() = 0;
             virtual void setRotation() = 0;
     };

@@ -7,6 +7,7 @@
 namespace iota
 {
     // Internal GL Types
+    typedef GLuint  i_buffer_id;
     typedef GLuint  i_uint; 
     typedef GLfloat i_float;
     typedef GLuint  i_texture_id;

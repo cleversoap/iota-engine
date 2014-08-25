@@ -1,8 +1,8 @@
 #include "SceneManager.h"
 
 iota::SceneManager::SceneManager()
+    : _graph(new iota::SceneGraph())
 {
-
 }
 
 iota::SceneManager::~SceneManager()

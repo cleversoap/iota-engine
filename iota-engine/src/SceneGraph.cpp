@@ -3,6 +3,7 @@
 iota::SceneGraph::SceneGraph() :
     _count(0)
 {
+    _root = new iota::RootSceneNode();
 }
 
 iota::SceneGraph::~SceneGraph()

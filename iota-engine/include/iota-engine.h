@@ -19,29 +19,34 @@
 #include <glm.hpp>
 
 // Class pre-declarations
+// Eventually this will just be the interface types so as to allow for
+// extensions.
 namespace iota
 {
     class Context;
     class Window;
-    class SceneGraph;
+
     class ISceneManager;
-    class SceneManager;
     class ISceneNode;
-    class SceneNode;
     class IComponent;
+    class IMeshComponent;
 }
 
 // Types
 #include "types.h"
 
-// Headers
+// Container and Context
 #include "Context.h"
 #include "Window.h"
-#include "SceneGraph.h"
+
+// Scene Manager
 #include "ISceneManager.h"
-#include "SceneManager.h"
+
+// Scene Nodes
 #include "ISceneNode.h"
-#include "SceneNode.h"
+
+// Components
 #include "IComponent.h"
+#include "IMeshComponent.h"
 
 #endif

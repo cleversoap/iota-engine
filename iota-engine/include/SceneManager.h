@@ -3,10 +3,15 @@
 
 #include "iota-engine.h"
 
+#include "SceneGraph.h"
+
 namespace iota
 {
     class SceneManager : public ISceneManager
     {
+        protected:
+            SceneGraph* _graph;
+
         public:
             SceneManager();
             virtual ~SceneManager();

@@ -2,6 +2,7 @@
 #define __IOTA_SCENEGRAPH_H__ 
 
 #include "iota-engine.h"
+#include "RootSceneNode.h"
 
 namespace iota
 {
@@ -11,13 +12,13 @@ namespace iota
             // Running count of scene nodes that have been added.
             // Used primarily for assigning a numerical suffix to
             // nodes added without a specific name.
-            i_uint      _count;
+            i_uint _count;
 
             // Global map of node names to nodes.
-            i_node_map  _nodeMap;
+            i_node_map _nodeMap;
 
             // Root node of the entire scene
-            ISceneNode*       _root;
+            RootSceneNode* _root;
 
         public:
             SceneGraph();

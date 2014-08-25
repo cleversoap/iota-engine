@@ -52,6 +52,12 @@ void iota::Window::open(const iota::WindowConfig &cfg)
         exit(EXIT_FAILURE);
     }
 
+    // TODO: Put these into config for the context
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LESS);
+    glEnable(GL_CULL_FACE);
+
+
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 

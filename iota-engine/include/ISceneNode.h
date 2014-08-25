@@ -5,17 +5,17 @@
 
 namespace iota
 {
-   class ISceneNode
-   {
-       public:
-           virtual ~ISceneNode();
-           virtual void getPosition() = 0;
-           virtual void setPosition() = 0;
-           virtual void getRotation() = 0;
-           virtual void setRotation() = 0;
-           virtual IComponent* getComponent() = 0;
-           virtual void setComponent(IComponent* cmp) = 0;
-   };
+    class ISceneNode
+    {
+        public:
+            virtual ~ISceneNode() {};
+            virtual std::string getId() = 0;
+            virtual void getPosition() = 0;
+            virtual void setPosition() = 0;
+            virtual void getRotation() = 0;
+            virtual void setRotation() = 0;
+            virtual bool isVisible() = 0;
+    };
 }
 
 #endif

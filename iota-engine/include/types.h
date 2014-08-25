@@ -12,13 +12,17 @@ namespace iota
     typedef GLuint  i_texture_id;
 
     // iota convenience types
+    // SceneNode containers
     typedef std::map<std::string,ISceneNode*> i_node_map;
     typedef std::vector<ISceneNode*> i_node_list;
+    // Attribute containers
+    typedef std::vector<unsigned short> i_indices;
+    typedef std::vector<glm::vec3> i_vectors;
 
     // GL Versions
     typedef struct {
-        const uint major;
-        const uint minor;
+        const uint major; // byte?
+        const uint minor; // byte?
         const bool core;
         const bool forward;
     } GLVersion;
@@ -37,6 +41,13 @@ namespace iota
         bool  ssao;
         int   filtering;
     } ContextConfig;
+
+    // Attributes
+    typedef struct {
+    } Position;
+
+    typedef struct {
+    } Rotation;
 }
 
 #endif

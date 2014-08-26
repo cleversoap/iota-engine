@@ -24,6 +24,8 @@ namespace iota
             SceneGraph();
             virtual ~SceneGraph();
             virtual ISceneNode* getNode(const std::string name);
+            virtual void addNode(ISceneNode* node, ISceneNode* parent = NULL);
+            virtual RootSceneNode* getRoot();
     };
 }
 

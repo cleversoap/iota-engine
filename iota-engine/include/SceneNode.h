@@ -21,6 +21,7 @@ namespace iota
             virtual void getRotation();
             virtual void setRotation();
             virtual bool isVisible();
+            virtual ISceneNode* getParent();
     };
 }
 

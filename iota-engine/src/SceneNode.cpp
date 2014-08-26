@@ -34,3 +34,8 @@ bool iota::SceneNode::isVisible()
 {
     return true;
 }
+
+iota::ISceneNode* iota::SceneNode::getParent()
+{
+    return _parent;
+}

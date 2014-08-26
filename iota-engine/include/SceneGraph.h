@@ -1,7 +1,7 @@
 #ifndef __IOTA_SCENEGRAPH_H__ 
 #define __IOTA_SCENEGRAPH_H__ 
 
-#include "iota-engine.h"
+#include "iota-platform.h"
 #include "RootSceneNode.h"
 
 namespace iota

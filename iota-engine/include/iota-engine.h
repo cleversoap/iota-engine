@@ -10,5 +10,6 @@
 #include "SceneNode.h"
 #include "RootSceneNode.h"
 #include "SceneGraph.h"
+#include "MeshComponent.h"
 
 #endif

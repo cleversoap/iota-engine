@@ -49,6 +49,9 @@ namespace iota
 
     typedef struct {
     } Rotation;
+
+    // Different types of components
+    enum component { MESH, LIGHT, CAMERA };
 }
 
 #endif

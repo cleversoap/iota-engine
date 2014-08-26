@@ -6,5 +6,9 @@
 #include "iota-platform.h"
 
 // Include the rest of the engine
+#include "SceneManager.h"
+#include "SceneNode.h"
+#include "RootSceneNode.h"
+#include "SceneGraph.h"
 
 #endif

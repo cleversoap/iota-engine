@@ -1,7 +1,7 @@
 #ifndef __IOTA_SCENEMANAGER_H__
 #define __IOTA_SCENEMANAGER_H__
 
-#include "iota-engine.h"
+#include "iota-platform.h"
 
 #include "SceneGraph.h"
 

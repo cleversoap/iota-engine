@@ -1,52 +1,14 @@
 #ifndef __IOTAENGINE_H__
 #define __IOTAENGINE_H__
 
-// std includes
-#include <iostream>
-#include <thread>
-#include <chrono>
-#include <map>
-#include <vector>
-#include <string>
+// Include the iota-platform requirements that the engine uses
+// to simplify headers internally.
+#include "iota-platform.h"
 
-// glew must be included before anything GL
-#include <glew.h>
-
-// glfw3
-#include <glfw3.h>
-
-// glm
-#include <glm.hpp>
-
-// Class pre-declarations
-// Eventually this will just be the interface types so as to allow for
-// extensions.
-namespace iota
-{
-    class Context;
-    class Window;
-
-    class ISceneManager;
-    class ISceneNode;
-    class IComponent;
-    class IMeshComponent;
-}
-
-// Types
-#include "types.h"
-
-// Container and Context
-#include "Context.h"
-#include "Window.h"
-
-// Scene Manager
-#include "ISceneManager.h"
-
-// Scene Nodes
-#include "ISceneNode.h"
-
-// Components
-#include "IComponent.h"
-#include "IMeshComponent.h"
+// Include the rest of the engine
+#include "SceneManager.h"
+#include "SceneNode.h"
+#include "RootSceneNode.h"
+#include "SceneGraph.h"
 
 #endif

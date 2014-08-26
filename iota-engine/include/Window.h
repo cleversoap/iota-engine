@@ -1,7 +1,7 @@
 #ifndef __IOTA_WINDOW_H__
 #define __IOTA_WINDOW_H__
 
-#include "iota-engine.h"
+#include "iota-platform.h"
 
 namespace iota
 {

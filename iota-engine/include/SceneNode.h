@@ -11,6 +11,7 @@ namespace iota
             //i_node_list _children;
             const std::string _id;
             ISceneNode* _parent;
+            glm::mat4 _transform;
 
         public:
             SceneNode(const std::string &id);

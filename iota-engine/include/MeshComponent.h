@@ -7,6 +7,12 @@ namespace iota
 {
     class MeshComponent : public IMeshComponent
     {
+        protected:
+            GLuint _vertexBuffer;
+            GLuint _uvBuffer;
+            GLuint _normalBuffer;
+            GLuint _elementBuffer;
+
         public:
             MeshComponent();
             virtual ~MeshComponent();

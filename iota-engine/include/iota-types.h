@@ -52,6 +52,7 @@ namespace iota
 
     // Different types of components
     enum component { MESH, LIGHT, CAMERA };
+    enum light { DIRECTIONAL, SPOT };
 }
 
 #endif

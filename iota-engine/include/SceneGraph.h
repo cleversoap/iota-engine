@@ -26,6 +26,7 @@ namespace iota
             virtual ISceneNode* getNode(const std::string name);
             virtual void addNode(ISceneNode* node, ISceneNode* parent = NULL);
             virtual RootSceneNode* getRoot();
+            virtual void $(const std::string &selector, ISceneNode* ctx = NULL);
     };
 }
 

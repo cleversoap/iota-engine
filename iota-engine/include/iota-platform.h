@@ -30,10 +30,11 @@ namespace iota
     class ISceneNode;
     class IComponent;
     class IMeshComponent;
+    class ILightComponent;
 }
 
 // Types
-#include "types.h"
+#include "iota-types.h"
 
 // Container and Context
 #include "Context.h"
@@ -48,5 +49,6 @@ namespace iota
 // Components
 #include "IComponent.h"
 #include "IMeshComponent.h"
+#include "ILightComponent.h"
 
 #endif

@@ -35,3 +35,10 @@ iota::RootSceneNode* iota::SceneGraph::getRoot()
 {
     return _root;
 }
+
+void iota::SceneGraph::$(const std::string &selector, iota::ISceneNode* ctx)
+{
+    if (ctx == NULL) {
+        ctx = _root;
+    }
+}

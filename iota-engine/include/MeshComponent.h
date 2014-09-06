@@ -8,10 +8,10 @@ namespace iota
     class MeshComponent : public IMeshComponent
     {
         protected:
-            GLuint _vertexBuffer;
-            GLuint _uvBuffer;
-            GLuint _normalBuffer;
-            GLuint _elementBuffer;
+            i_buffer_id _vertexBuffer;
+            i_buffer_id _uvBuffer;
+            i_buffer_id _normalBuffer;
+            i_buffer_id _elementBuffer;
 
         public:
             MeshComponent();

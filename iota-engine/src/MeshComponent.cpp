@@ -14,7 +14,6 @@ iota::MeshComponent::~MeshComponent()
     glDeleteBuffers(1, &_uvBuffer);
     glDeleteBuffers(1, &_normalBuffer);
     glDeleteBuffers(1, &_elementBuffer);
-
 }
 
 iota::component iota::MeshComponent::getType()
